@@ -203,27 +203,27 @@ namespace PoweBITests
 
         }
 
-        //[Test, Order(8)]
+        [Test, Order(8)]
 
-        //public void VerifyCCPF_PlAdavanceAmount()
-        //{
-        //	test = extent.StartTest("VerifyCCPF_PlAdavanceAmount");
-        //	eltPreviewPage.LaunchEltPreviewpage();
+        public void VerifyCCPF_PlAdavanceAmount()
+        {
+            test = extent.StartTest("VerifyCCPF_PlAdavanceAmount");
+            eltPreviewPage.LaunchEltPreviewpage();
 
-        //	Thread.Sleep(10000);
+            Thread.Sleep(10000);
 
-        //	// CCqlickview  values
-        //	var cCqlick_PlAdvanceAmount = excelComparison.GetCqlickValueFromExcel("Daily-PLAdvances.xlsx", "J");
-
-
-        //	//ELT preview values
-        //	var Elt_PlAdavnceAmount = eltPreviewPage.GetPlAdavances();
+            // CCqlickview  values
+            var cCqlick_PlAdvanceAmount = excelComparison.GetCqlickValueFromExcel("Daily-PLAdvances.xlsx", "J");
 
 
-        //	Assert.AreEqual(cCqlick_PlAdvanceAmount, Elt_PlAdavnceAmount);
-        //	test.Log(LogStatus.Pass, "Test passed");
+            //ELT preview values
+            var Elt_PlAdavnceAmount = eltPreviewPage.GetPlAdavances();
 
-        //}
+
+            Assert.AreEqual(cCqlick_PlAdvanceAmount, Elt_PlAdavnceAmount);
+            test.Log(LogStatus.Pass, "Test passed");
+
+        }
 
 
         //[Test, Order(9)]
